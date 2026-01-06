@@ -731,6 +731,23 @@ intervention strategies.</li>
                   </div>
                 </div><!-- End Portfolio Item -->
 
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web-development">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/high_achievers_home_page.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web Development</span>
+                        <h4>High Achievers University  Website</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/high_achievers_home_page.png" class="glightbox" title="High Achievers University Website"><i class="bi bi-plus-lg"></i></a>
+                          <!-- <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <!-- <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photography">
                   <div class="portfolio-wrap">
                     <img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
@@ -818,7 +835,7 @@ intervention strategies.</li>
                 <i class="bi bi-arrow-up-right"></i>
               </a> -->
               <h3>
-                <a href="service-details.html">
+                <!-- <a href="service-details.html"> -->
                   Data Analysis & <span> Reporting</span>
                 </a>
               </h3>
@@ -836,7 +853,7 @@ intervention strategies.</li>
                 <i class="bi bi-arrow-up-right"></i>
               </a> -->
               <h3>
-                <a href="service-details.html">
+                <!-- <a href="service-details.html"> -->
                   Interactive Dashboard <span>Development </span>
                 </a>
               </h3>
@@ -854,7 +871,7 @@ intervention strategies.</li>
                 <i class="bi bi-arrow-up-right"></i>
               </a> -->
               <h3>
-                <a href="service-details.html">
+                <!-- <a href="service-details.html"> -->
                   A/B Testing &  <span> Experiment Analysis</span>
                 </a>
               </h3>
@@ -872,7 +889,7 @@ intervention strategies.</li>
                 <i class="bi bi-arrow-up-right"></i>
               </a> -->
               <h3>
-                <a href="service-details.html">
+                <!-- <a href="service-details.html"> -->
                   Custom Software <span>Solutions</span>
                 </a>
               </h3>
@@ -890,7 +907,7 @@ intervention strategies.</li>
                 <i class="bi bi-arrow-up-right"></i>
               </a> -->
               <h3>
-                <a href="service-details.html">
+                <!-- <a href="service-details.html"> -->
                   Web Application <span> Development </span>
                 </a>
               </h3>
@@ -908,7 +925,7 @@ intervention strategies.</li>
                 <i class="bi bi-arrow-up-right"></i>
               </a> -->
               <h3>
-                <a href="service-details.html">
+                <!-- <a href="service-details.html"> -->
                   Proof-of-Concept <span> Development</span>
                 </a>
               </h3>
@@ -1104,7 +1121,69 @@ intervention strategies.</li>
               <h3>Get In Touch</h3>
               <p>Let's turn your ideas into actionable insights together.</p>
 
-              <form action="https://api.web3forms.com/submit" method="POST" class="php-email-form">
+
+
+              <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="web3forms-form">
+    <input type="hidden" name="access_key" value="fae0261a-36bd-4f69-87fa-233a7dc909ea">
+    <!-- ADD THIS LINE: It tells Web3Forms NOT to redirect and NOT to show JSON -->
+    <input type="hidden" name="redirect" value="false">
+    
+    
+    <!-- Add this wrapper div for formContent -->
+    <div id="form-content">
+        <div class="row gy-4">
+            <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+
+            <div class="col-md-6">
+                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="col-12">
+                <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+            </div>
+
+            <div class="col-12">
+                <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+            </div>
+
+            <div class="col-12 text-center">
+                <button type="submit" class="btn">Send Message</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Move messages outside form-content so they stay visible -->
+    <div class="col-12 text-center">
+        <div class="loading" style="display: none;">Loading...</div>
+        <div class="error-message" style="display: none;"></div>
+        <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
+    </div>
+</form>
+
+              <!-- <form 
+    id="contactForm" 
+    action="https://api.web3forms.com/submit" 
+    method="POST" 
+    class="php-email-form"
+>
+    <div id="form-content"> 
+        <div class="row gy-4">
+
+            <div class="col-12 text-center">
+                <button type="submit" class="btn">Send Message</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="loading" style="display: none;">Loading</div>
+    <div class="error-message" style="display: none;"></div>
+    <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
+</form> -->
+
+
+              <!-- <form action="https://api.web3forms.com/submit" method="POST" class="php-email-form">
                  <input type="hidden" name="access_key" value="fae0261a-36bd-4f69-87fa-233a7dc909ea">
                 <div class="row gy-4">
 
@@ -1133,7 +1212,106 @@ intervention strategies.</li>
                   </div>
 
                 </div>
-              </form>
+              </form> -->
+
+              <!-- <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="php-email-form">
+    <input type="hidden" name="access_key" value="fae0261a-36bd-4f69-87fa-233a7dc909ea">
+    
+    <div class="row gy-4">
+        <div class="col-md-6">
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+        </div>
+
+        <div class="col-md-6">
+            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+        </div>
+
+        <div class="col-12">
+            <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+        </div>
+
+        <div class="col-12">
+            <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+        </div>
+
+        <div class="col-12 text-center">
+            <div class="loading" style="display: none;">Loading...</div>
+            <div class="error-message" style="display: none;"></div>
+            <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
+
+            <button type="submit" class="btn">Send Message</button>
+        </div>
+    </div>
+</form>
+
+<script>
+document.getElementById('contact-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const form = this;
+    const submitButton = form.querySelector('button[type="submit"]');
+    const loadingDiv = document.querySelector('.loading');
+    const errorDiv = document.querySelector('.error-message');
+    const successDiv = document.querySelector('.sent-message');
+    
+    // Show loading message, hide others
+    loadingDiv.style.display = 'block';
+    errorDiv.style.display = 'none';
+    successDiv.style.display = 'none';
+    submitButton.disabled = true;
+    
+    try {
+        const formData = new FormData(form);
+        
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData
+        });
+        
+        // Check if response is JSON
+        const contentType = response.headers.get('content-type');
+        if (!contentType || !contentType.includes('application/json')) {
+            throw new Error('Server did not return JSON response');
+        }
+        
+        const result = await response.json();
+        
+        if (result.success) {
+            // Show success message
+            loadingDiv.style.display = 'none';
+            successDiv.style.display = 'block';
+            
+            // Reset form
+            form.reset();
+            
+            // Re-enable button after 3 seconds
+            setTimeout(() => {
+                submitButton.disabled = false;
+            }, 3000);
+        } else {
+            // Show error message from server
+            loadingDiv.style.display = 'none';
+            errorDiv.style.display = 'block';
+            errorDiv.textContent = 'Error: ' + (result.message || 'Form submission failed');
+            submitButton.disabled = false;
+        }
+        
+    } catch (error) {
+        // Handle network errors or JSON parsing errors
+        console.error('Form submission error:', error);
+        
+        loadingDiv.style.display = 'none';
+        errorDiv.style.display = 'block';
+        errorDiv.textContent = 'There was an error sending your message. Please try again.';
+        submitButton.disabled = false;
+        
+        // Hide error message after 5 seconds
+        setTimeout(() => {
+            errorDiv.style.display = 'none';
+        }, 5000);
+    }
+});
+</script> -->
 
             </div>
           </div>
@@ -1190,6 +1368,81 @@ intervention strategies.</li>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    // New: Get the container holding all inputs/buttons
+    const formContent = document.getElementById('form-content'); 
+    
+    // Get the status message elements
+    const loadingMessage = form.querySelector('.loading');
+    const errorMessage = form.querySelector('.error-message');
+    const sentMessage = form.querySelector('.sent-message');
+
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault(); 
+        
+        // 1. Reset state: Show loading, hide all others
+        formContent.style.display = 'block'; // Ensure form is visible initially
+        errorMessage.style.display = 'none';
+        sentMessage.style.display = 'none';
+        loadingMessage.style.display = 'block';
+
+
+        // ========== ADD ONLY THESE 6 LINES ==========
+                    // Hide success message and show form again after 5 seconds
+        setTimeout(() => {
+        sentMessage.style.display = 'none';
+        formContent.style.display = 'block';
+        }, 5000);
+                    // ========== END OF ADDED CODE ==========
+        const formData = new FormData(form);
+        const formEndpoint = form.getAttribute('action');
+
+        try {
+            const response = await fetch(formEndpoint, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json' 
+                }
+            });
+
+            loadingMessage.style.display = 'none';
+
+            if (response.ok) {
+                const result = await response.json();
+                
+                // **THE FIX IS HERE:** Check for success flag in the JSON response
+                if (result.success) { 
+                    // 3. SUCCESS: Hide the form content, show only the sent message
+                    formContent.style.display = 'none'; 
+                    sentMessage.style.display = 'block';
+                    form.reset(); 
+                } else {
+                    // 4. WEB3FORMS ERROR (e.g., failed validation, blocked email)
+                    errorMessage.textContent = result.message || 'Submission failed. Please try again.';
+                    errorMessage.style.display = 'block';
+                    formContent.style.display = 'block'; // Keep form visible to retry
+                }
+            } else {
+                // 5. SERVER/NETWORK ERROR (e.g., 404, 500)
+                errorMessage.textContent = 'Server error. Please try again later.';
+                errorMessage.style.display = 'block';
+                formContent.style.display = 'block';
+            }
+        } catch (error) {
+            // 6. CATCH ALL ERROR
+            console.error('Submission Error:', error);
+            loadingMessage.style.display = 'none';
+            errorMessage.textContent = 'A network error occurred. Please check your internet connection.';
+            errorMessage.style.display = 'block';
+            formContent.style.display = 'block';
+        }
+    });
+</script>
+
+
 
 </body>
 
