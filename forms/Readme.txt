@@ -1,2 +1,14 @@
-Fully working PHP/AJAX contact form script is available in the pro version of the template.
-You can buy it from: https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/
+
+# My Portfolio
+
+This is my personal portfolio website showcasing my projects, skills,
+and contact information.
+
+## 🌐 Live Site
+https://mbogo756.github.io/My-Portfolio/
+
+## 🛠 Built With
+- HTML5
+- CSS3
+- Bootstrap
+- JavaScript
